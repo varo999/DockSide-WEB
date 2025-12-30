@@ -15,13 +15,14 @@ function sendToWhatsApp() {
 
     // 4. Creamos el texto del mensaje para WhatsApp
     // El %0A es para hacer un salto de línea en WhatsApp
-    const text = "⚓ *Nuevo contacto desde la Web* ⚓" + "%0A" +
-                 "*Nombre:* " + name + "%0A" +
-                 "*Email:* " + email + "%0A" +
+    // 4. Creamos el texto del mensaje para WhatsApp
+    const text = "⚓ *NUEVO CONTACTO * ⚓" + "\n" +
+                 "*Nombre:* " + name + "\n" +
+                 "*Email:* " + email + "\n" +
                  "*Mensaje:* " + message;
 
-    // 5. Creamos la URL final
-    const url = "https://wa.me/" + phone + "?text=" + text;
+    // 5. Creamos la URL final (Usando encodeURIComponent para evitar errores)
+    const url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(text);
 
     // 6. Abrimos WhatsApp en una nueva pestaña
     window.open(url, '_blank').focus();
