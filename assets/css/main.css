@@ -1,6 +1,13 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600,600italic,700,700italic");
-
+ 
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-display: swap;
+    src: local('Font Awesome 5 Free'); /* Intenta cargar local primero */
+    font-weight: 900;
+    font-style: normal;
+}
 /*
 	Directive by HTML5 UP
 	html5up.net | @ajlkn
