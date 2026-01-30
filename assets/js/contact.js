@@ -5,7 +5,7 @@ function sendToWhatsApp() {
     const message = document.getElementById('ws_message').value;
 
     // 2. Tu número de teléfono (ya lo he puesto con el 34 delante)
-    const phone = "34687253671";
+    const phone = "34600831891";
 
     // 3. Validamos que el nombre y el mensaje no estén vacíos
     if (name.trim() === "" || message.trim() === "") {

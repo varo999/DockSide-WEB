@@ -2241,21 +2241,8 @@ input, select, textarea {
 		}
 
 			.image.icon:before {
-				-moz-transition: -moz-transform 0.1s ease-in-out, font-size 0.1s ease-in-out;
-				-webkit-transition: -webkit-transform 0.1s ease-in-out, font-size 0.1s ease-in-out;
-				-ms-transition: -ms-transform 0.1s ease-in-out, font-size 0.1s ease-in-out;
-				transition: transform 0.1s ease-in-out, font-size 0.1s ease-in-out;
-				color: #fff;
-				font-size: 6em;
-				height: 1em;
-				left: 50%;
-				line-height: 1em;
-				margin: -0.5em 0 0 -0.5em;
-				position: absolute;
-				text-align: center;
-				top: 50%;
-				width: 1em;
-				z-index: 1;
+				content: none !important; /* Borra el símbolo del engranaje */
+				display: none !important;  /* Se asegura de que no ocupe espacio */
 			}
 
 			.image.icon:hover:before {
@@ -2729,7 +2716,7 @@ input, select, textarea {
     background-attachment: scroll, fixed;
     /* Eliminamos el top-3200.svg y dejamos solo el degradado y tu logo */
     background-image: linear-gradient(rgba(5, 10, 20, 0.9), rgba(26, 42, 79, 0.7)), 
-                      url("../../images/logo-buceo.png");
+                      url("../../images/logo.webp");
     background-position: top left, center center;
     background-repeat: repeat, no-repeat;
     background-size: auto, cover;
@@ -3053,7 +3040,7 @@ input, select, textarea {
 				background-attachment: scroll, scroll, fixed;
 				/* Quitamos el top-1600.svg */
 				background-image: linear-gradient(rgba(5, 10, 20, 0.9), rgba(26, 42, 79, 0.7)), 
-								url("../../images/logo-buceo.png");
+								url("../../images/logo.webp");
 				
 				/* Ajustamos el tamaño: quitamos los 1600px del svg */
 				background-size: auto, cover;
@@ -3226,7 +3213,7 @@ input, select, textarea {
 			#header {
 				/* 1. Eliminamos el "url("images/top-1280.svg")," */
 					background-image: linear-gradient(rgba(5, 10, 20, 0.9), rgba(26, 42, 79, 0.7)), 
-									url("../../images/logo-buceo.png");
+									url("../../images/logo.webp");
 
 					/* 2. Quitamos el tamaño fijo del SVG (1280px 184px) */
 					background-size: auto, cover;
@@ -3448,3 +3435,5 @@ input, select, textarea {
 			#header h1 { font-size: 1.6em !important; }
 			#header p { font-size: 1em !important; }
 		}
+
+		
